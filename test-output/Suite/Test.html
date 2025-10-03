@@ -1,0 +1,315 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>47/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 24 16:46:24 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>3174 seconds (3174170 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='add_Product.MaxLimitPrice_ProductTest.maxLimitPrice()'><b>maxLimitPrice</b><br>Test class: add_Product.MaxLimitPrice_ProductTest</td>
+<td></td>
+<td>11</td>
+<td>add_Product.MaxLimitPrice_ProductTest@76ed1b7c</td></tr>
+<tr>
+<td title='add_Product.SelectBrand_ProductTest.selectBrand()'><b>selectBrand</b><br>Test class: add_Product.SelectBrand_ProductTest</td>
+<td></td>
+<td>20</td>
+<td>add_Product.SelectBrand_ProductTest@610f7aa</td></tr>
+<tr>
+<td title='add_Product.NumbersCreateCategory_ProductTest.numbersCreateCategory()'><b>numbersCreateCategory</b><br>Test class: add_Product.NumbersCreateCategory_ProductTest</td>
+<td></td>
+<td>19</td>
+<td>add_Product.NumbersCreateCategory_ProductTest@fd07cbb</td></tr>
+<tr>
+<td title='add_Product.MaxLimitProductName_ProductTest.maxLimitName()'><b>maxLimitName</b><br>Test class: add_Product.MaxLimitProductName_ProductTest</td>
+<td></td>
+<td>7</td>
+<td>add_Product.MaxLimitProductName_ProductTest@6ff29830</td></tr>
+<tr>
+<td title='add_Product.NumericsStock_ProductTest.numericStock()'><b>numericStock</b><br>Test class: add_Product.NumericsStock_ProductTest</td>
+<td></td>
+<td>23</td>
+<td>add_Product.NumericsStock_ProductTest@3098cf3b</td></tr>
+<tr>
+<td title='add_Product.MoreThan2DecimalPrice_ProductTest.moreThan2DecimalPrice()'><b>moreThan2DecimalPrice</b><br>Test class: add_Product.MoreThan2DecimalPrice_ProductTest</td>
+<td></td>
+<td>11</td>
+<td>add_Product.MoreThan2DecimalPrice_ProductTest@17a7f733</td></tr>
+<tr>
+<td title='add_Product.NumericPrice_ProductTest.numericPrice()'><b>numericPrice</b><br>Test class: add_Product.NumericPrice_ProductTest</td>
+<td></td>
+<td>11</td>
+<td>add_Product.NumericPrice_ProductTest@d21a74c</td></tr>
+<tr>
+<td title='add_Product.MaxPurchaseQuantityRange_ProductTest.maxPurchaseQuantity()'><b>maxPurchaseQuantity</b><br>Test class: add_Product.MaxPurchaseQuantityRange_ProductTest</td>
+<td></td>
+<td>13</td>
+<td>add_Product.MaxPurchaseQuantityRange_ProductTest@68e5eea7</td></tr>
+<tr>
+<td title='add_Product.NumericsLoyaltyPoints_ProductTest.numericsLoyaltyPoints()'><b>numericsLoyaltyPoints</b><br>Test class: add_Product.NumericsLoyaltyPoints_ProductTest</td>
+<td></td>
+<td>30</td>
+<td>add_Product.NumericsLoyaltyPoints_ProductTest@10d68fcd</td></tr>
+<tr>
+<td title='add_Product.ZeroPrice_ProductTest.emptyPrice()'><b>emptyPrice</b><br>Test class: add_Product.ZeroPrice_ProductTest</td>
+<td></td>
+<td>12</td>
+<td>add_Product.ZeroPrice_ProductTest@fa36558</td></tr>
+<tr>
+<td title='add_Product.SpecialCharactersName_ProductTest.specialCharactersName()'><b>specialCharactersName</b><br>Test class: add_Product.SpecialCharactersName_ProductTest</td>
+<td></td>
+<td>9</td>
+<td>add_Product.SpecialCharactersName_ProductTest@672872e1</td></tr>
+<tr>
+<td title='add_Product.SpecialCharactersAddValue_ProductTest.specialCharactersAddValue()'><b>specialCharactersAddValue</b><br>Test class: add_Product.SpecialCharactersAddValue_ProductTest</td>
+<td></td>
+<td>19</td>
+<td>add_Product.SpecialCharactersAddValue_ProductTest@548e6d58</td></tr>
+<tr>
+<td title='add_Product.NegativeStock_ProductTest.negativeStock()'><b>negativeStock</b><br>Test class: add_Product.NegativeStock_ProductTest</td>
+<td></td>
+<td>11</td>
+<td>add_Product.NegativeStock_ProductTest@11fc564b</td></tr>
+<tr>
+<td title='add_Product.ZeroDiscount_ProductTest.zeroDiscount()'><b>zeroDiscount</b><br>Test class: add_Product.ZeroDiscount_ProductTest</td>
+<td></td>
+<td>13</td>
+<td>add_Product.ZeroDiscount_ProductTest@484970b0</td></tr>
+<tr>
+<td title='add_Product.ValidateProductScreenTest.validate()'><b>validate</b><br>Test class: add_Product.ValidateProductScreenTest</td>
+<td></td>
+<td>5</td>
+<td>add_Product.ValidateProductScreenTest@15ca7889</td></tr>
+<tr>
+<td title='add_Product.ZeroMinPurchaseQuantity_ProductTest.zeroMinPurchase()'><b>zeroMinPurchase</b><br>Test class: add_Product.ZeroMinPurchaseQuantity_ProductTest</td>
+<td></td>
+<td>12</td>
+<td>add_Product.ZeroMinPurchaseQuantity_ProductTest@175b9425</td></tr>
+<tr>
+<td title='add_Product.ProductUnit_ProductTest.productUnit()'><b>productUnit</b><br>Test class: add_Product.ProductUnit_ProductTest</td>
+<td></td>
+<td>19</td>
+<td>add_Product.ProductUnit_ProductTest@7c1e2a9e</td></tr>
+<tr>
+<td title='add_Product.SelectVarianteValue_ProductTest.selectVarianteValue()'><b>selectVarianteValue</b><br>Test class: add_Product.SelectVarianteValue_ProductTest</td>
+<td></td>
+<td>23</td>
+<td>add_Product.SelectVarianteValue_ProductTest@5f8edcc5</td></tr>
+<tr>
+<td title='add_Product.SpecialCharactersMinQuantity_ProductTest.specialCharactersMinQuantity()'><b>specialCharactersMinQuantity</b><br>Test class: add_Product.SpecialCharactersMinQuantity_ProductTest</td>
+<td></td>
+<td>10</td>
+<td>add_Product.SpecialCharactersMinQuantity_ProductTest@68267da0</td></tr>
+<tr>
+<td title='add_Product.ValidDescription_ProductTest.valid()'><b>valid</b><br>Test class: add_Product.ValidDescription_ProductTest</td>
+<td></td>
+<td>29</td>
+<td>add_Product.ValidDescription_ProductTest@3f56875e</td></tr>
+<tr>
+<td title='add_Product.NumbersMinPurchaseQuantity_ProductTest.numbersMinPurchaseQuantity()'><b>numbersMinPurchaseQuantity</b><br>Test class: add_Product.NumbersMinPurchaseQuantity_ProductTest</td>
+<td></td>
+<td>12</td>
+<td>add_Product.NumbersMinPurchaseQuantity_ProductTest@1ebd319f</td></tr>
+<tr>
+<td title='add_Product.MoreThanLimitDiscount_ProductTest.moreThanLimitDiscount()'><b>moreThanLimitDiscount</b><br>Test class: add_Product.MoreThanLimitDiscount_ProductTest</td>
+<td></td>
+<td>12</td>
+<td>add_Product.MoreThanLimitDiscount_ProductTest@2118cddf</td></tr>
+<tr>
+<td title='add_Product.ValidUploadImage_ProductTest.valid()'><b>valid</b><br>Test class: add_Product.ValidUploadImage_ProductTest</td>
+<td></td>
+<td>38</td>
+<td>add_Product.ValidUploadImage_ProductTest@a1cdc6d</td></tr>
+<tr>
+<td title='add_Product.MaxLength_ProductNameTest.maxLength()'><b>maxLength</b><br>Test class: add_Product.MaxLength_ProductNameTest</td>
+<td></td>
+<td>12</td>
+<td>add_Product.MaxLength_ProductNameTest@117e949d</td></tr>
+<tr>
+<td title='add_Product.SpecialCharactersPrice_ProductTest.specialCharactersPrice()'><b>specialCharactersPrice</b><br>Test class: add_Product.SpecialCharactersPrice_ProductTest</td>
+<td></td>
+<td>11</td>
+<td>add_Product.SpecialCharactersPrice_ProductTest@2f465398</td></tr>
+<tr>
+<td title='add_Product.LessThan3Description_ProductTest.lessThan3Description()'><b>lessThan3Description</b><br>Test class: add_Product.LessThan3Description_ProductTest</td>
+<td></td>
+<td>26</td>
+<td>add_Product.LessThan3Description_ProductTest@313b2ea6</td></tr>
+<tr>
+<td title='add_Product.InvalidHSN_ProductTest.invalidHSN()'><b>invalidHSN</b><br>Test class: add_Product.InvalidHSN_ProductTest</td>
+<td></td>
+<td>14</td>
+<td>add_Product.InvalidHSN_ProductTest@32910148</td></tr>
+<tr>
+<td title='add_Product.SpecialCharactersCreateVariants_ProductTest.specialCharactersCreateVariante()'><b>specialCharactersCreateVariante</b><br>Test class: add_Product.SpecialCharactersCreateVariants_ProductTest</td>
+<td></td>
+<td>44</td>
+<td>add_Product.SpecialCharactersCreateVariants_ProductTest@3c0be339</td></tr>
+<tr>
+<td title='add_Product.PercentageDiscount_ProductTest.persentageDiscount()'><b>persentageDiscount</b><br>Test class: add_Product.PercentageDiscount_ProductTest</td>
+<td></td>
+<td>17</td>
+<td>add_Product.PercentageDiscount_ProductTest@68567e20</td></tr>
+<tr>
+<td title='add_Product.SpecialCharactersDiscount_ProductTest.specialCharactersDiscount()'><b>specialCharactersDiscount</b><br>Test class: add_Product.SpecialCharactersDiscount_ProductTest</td>
+<td></td>
+<td>13</td>
+<td>add_Product.SpecialCharactersDiscount_ProductTest@394a2528</td></tr>
+<tr>
+<td title='add_Product.NegativeLoyaltyPoints_ProductTest.negativeLoyaltyPoints()'><b>negativeLoyaltyPoints</b><br>Test class: add_Product.NegativeLoyaltyPoints_ProductTest</td>
+<td></td>
+<td>17</td>
+<td>add_Product.NegativeLoyaltyPoints_ProductTest@6a2b953e</td></tr>
+<tr>
+<td title='add_Product.SpecialChracterCategory_ProductTest.specialCharacter()'><b>specialCharacter</b><br>Test class: add_Product.SpecialChracterCategory_ProductTest</td>
+<td></td>
+<td>20</td>
+<td>add_Product.SpecialChracterCategory_ProductTest@5609159b</td></tr>
+<tr>
+<td title='add_Product.ExcludeGST_ProductTest.excludeGST()'><b>excludeGST</b><br>Test class: add_Product.ExcludeGST_ProductTest</td>
+<td></td>
+<td>24</td>
+<td>add_Product.ExcludeGST_ProductTest@683dbc2c</td></tr>
+<tr>
+<td title='add_Product.SelectVariant_ProductTest.selectVariante()'><b>selectVariante</b><br>Test class: add_Product.SelectVariant_ProductTest</td>
+<td></td>
+<td>31</td>
+<td>add_Product.SelectVariant_ProductTest@6236eb5f</td></tr>
+<tr>
+<td title='add_Product.LessThan3Specification_ProductTest.lessThan3Specification()'><b>lessThan3Specification</b><br>Test class: add_Product.LessThan3Specification_ProductTest</td>
+<td></td>
+<td>30</td>
+<td>add_Product.LessThan3Specification_ProductTest@2b4bac49</td></tr>
+<tr>
+<td title='add_Product.NumericHSNCode_ProductTest.numerics()'><b>numerics</b><br>Test class: add_Product.NumericHSNCode_ProductTest</td>
+<td></td>
+<td>36</td>
+<td>add_Product.NumericHSNCode_ProductTest@57250572</td></tr>
+<tr>
+<td title='add_Product.ValidSpecification_ProductTest.valid()'><b>valid</b><br>Test class: add_Product.ValidSpecification_ProductTest</td>
+<td></td>
+<td>39</td>
+<td>add_Product.ValidSpecification_ProductTest@6e509ffa</td></tr>
+<tr>
+<td title='add_Product.RupeesDiscount_ProductTest.rupeesDiscount()'><b>rupeesDiscount</b><br>Test class: add_Product.RupeesDiscount_ProductTest</td>
+<td></td>
+<td>13</td>
+<td>add_Product.RupeesDiscount_ProductTest@2638011</td></tr>
+<tr>
+<td title='add_Product.EnablePublish_ProductTest.enable()'><b>enable</b><br>Test class: add_Product.EnablePublish_ProductTest</td>
+<td></td>
+<td>5</td>
+<td>add_Product.EnablePublish_ProductTest@3571b748</td></tr>
+<tr>
+<td title='add_Product.LessThanThreeName_ProductTest.lessThanThreeName()'><b>lessThanThreeName</b><br>Test class: add_Product.LessThanThreeName_ProductTest</td>
+<td></td>
+<td>12</td>
+<td>add_Product.LessThanThreeName_ProductTest@6db9f5a4</td></tr>
+<tr>
+<td title='add_Product.NoDelete_ProductTest.noDelete()'><b>noDelete</b><br>Test class: add_Product.NoDelete_ProductTest</td>
+<td></td>
+<td>8</td>
+<td>add_Product.NoDelete_ProductTest@7b02881e</td></tr>
+<tr>
+<td title='add_Product.OptionalFields_ProductTest.optionalField()'><b>optionalField</b><br>Test class: add_Product.OptionalFields_ProductTest</td>
+<td></td>
+<td>17</td>
+<td>add_Product.OptionalFields_ProductTest@7a675056</td></tr>
+<tr>
+<td title='add_Product.ZeroStockQuantity_ProductTest.zeroStockQuantity()'><b>zeroStockQuantity</b><br>Test class: add_Product.ZeroStockQuantity_ProductTest</td>
+<td></td>
+<td>22</td>
+<td>add_Product.ZeroStockQuantity_ProductTest@2898ac89</td></tr>
+<tr>
+<td title='add_Product.SelectExistingCategory_ProductTest.category()'><b>category</b><br>Test class: add_Product.SelectExistingCategory_ProductTest</td>
+<td></td>
+<td>10</td>
+<td>add_Product.SelectExistingCategory_ProductTest@6a03bcb1</td></tr>
+<tr>
+<td title='add_Product.LessThanMinPurchase_ProductTest.lessThanMinPurchase()'><b>lessThanMinPurchase</b><br>Test class: add_Product.LessThanMinPurchase_ProductTest</td>
+<td></td>
+<td>11</td>
+<td>add_Product.LessThanMinPurchase_ProductTest@623a8092</td></tr>
+<tr>
+<td title='add_Product.MinimumPurchase_ProductTest.minimumPurchase()'><b>minimumPurchase</b><br>Test class: add_Product.MinimumPurchase_ProductTest</td>
+<td></td>
+<td>12</td>
+<td>add_Product.MinimumPurchase_ProductTest@3e96bacf</td></tr>
+<tr>
+<td title='add_Product.SelectVariante_ProductTest.selectVariante()'><b>selectVariante</b><br>Test class: add_Product.SelectVariante_ProductTest</td>
+<td></td>
+<td>19</td>
+<td>add_Product.SelectVariante_ProductTest@21b2e768</td></tr>
+</table><p>
+</body>
+</html>

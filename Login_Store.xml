@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Login.MissMatch_PINTest"/>
+      <class name="Login.LessThanFour_PINTest"/>
+      <class name="Login.Valid_ResetPINTest"/>
+      <class name="Login.Empty_MobileTest"/>
+      <class name="Login.SpecialCharacters_PINTest"/>
+      <class name="Login.Alphabet_PINTest"/>
+      <class name="Login.Invalid_CredentialsTest"/>
+      <class name="Login.Blank_ConfirmPINTest"/>
+      <class name="Login.Empty_PINTest"/>
+      <class name="Login.SpecialCharacters_NewPINTest"/>
+      <class name="Login.SpecialCharacters_ConfirmPINTest"/>
+      <class name="Login.AlphaNumerics_NewPINTest"/>
+      <class name="Login.StartingZero_MobileTest"/>
+      <class name="Login.MoreThanFour_PINTest"/>
+      <class name="Login.Alphabets_MobileNumTest"/>
+      <class name="Login.AlphaNumerics_PINTest"/>
+      <class name="Login.SpecialCharacters_MobileTest"/>
+      <class name="Login.Blank_NewPINTest"/>
+      <class name="Login.Valid_CredentialsTest"/>
+      <class name="Login.LessThanTen_MobileTest"/>
+      <class name="Login.UnRegister_MobileTest"/>
+      <class name="Login.AlphaNumerics_ConfirmPINTest"/>
+      <class name="Login.AlphaNumerics_MobileTest"/>
+      <class name="Login.MoreThanTen_MobileTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

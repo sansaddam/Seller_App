@@ -1,0 +1,841 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>72/5/1</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 11 11:19:50 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>3314 seconds (3314950 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Create_Store.Service_CreateStoreTest.service()'><b>service</b><br>Test class: Create_Store.Service_CreateStoreTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&apos;Set Your PIN&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.nextshopz.MainActivity, appium:appPackage: com.nextshopz, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.nextshopz.MainActivity, appPackage: com.nextshopz, automationName: UiAutomator2, deviceName: emulator-5556, platformName: ANDROID, platformVersion: 16, udid: emulator-5556}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5556, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5556, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5556, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e3d4f1c3-ef2d-407d-b225-dc29bd6b5106
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Create_Store.Service_CreateStoreTest.service(Service_CreateStoreTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1007729201", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1007729201'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&apos;Set Your PIN&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.nextshopz.MainActivity, appium:appPackage: com.nextshopz, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.nextshopz.MainActivity, appPackage: com.nextshopz, automationName: UiAutomator2, deviceName: emulator-5556, platformName: ANDROID, platformVersion: 16, udid: emulator-5556}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5556, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5556, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5556, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e3d4f1c3-ef2d-407d-b225-dc29bd6b5106
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Create_Store.Service_CreateStoreTest.service(Service_CreateStoreTest.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>58</td>
+<td>Create_Store.Service_CreateStoreTest@3cc1435c</td></tr>
+<tr>
+<td title='Create_Store.LessThanThree_SubDomainTest.lessThanThree()'><b>lessThanThree</b><br>Test class: Create_Store.LessThanThree_SubDomainTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast[contains(@text,&apos;Domain name must be between 5 and 30 characters.&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Create_Store.LessThanThree_SubDomainTest.lessThanThree(LessThanThree_SubDomainTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3ebdb6ef-a3bf-40fa-9912-e3aa32b8cc6a, findElement {using=xpath, value=//android.widget.Toast[contains(@text,&apos;Domain name must be between 5 and 30 characters.&apos;)]}]
+Capabilities {appium:appActivity: com.nextshopz.MainActivity, appium:appPackage: com.nextshopz, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.nextshopz.MainActivity, appPackage: com.nextshopz, automationName: UiAutomator2, deviceName: emulator-5556, platformName: ANDROID, platformVersion: 16, udid: emulator-5556}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5556, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5556, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5556, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3ebdb6ef-a3bf-40fa-9912-e3aa32b8cc6a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7313260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7313260'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast[contains(@text,&apos;Domain name must be between 5 and 30 characters.&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Create_Store.LessThanThree_SubDomainTest.lessThanThree(LessThanThree_SubDomainTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3ebdb6ef-a3bf-40fa-9912-e3aa32b8cc6a, findElement {using=xpath, value=//android.widget.Toast[contains(@text,&apos;Domain name must be between 5 and 30 characters.&apos;)]}]
+Capabilities {appium:appActivity: com.nextshopz.MainActivity, appium:appPackage: com.nextshopz, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.nextshopz.MainActivity, appPackage: com.nextshopz, automationName: UiAutomator2, deviceName: emulator-5556, platformName: ANDROID, platformVersion: 16, udid: emulator-5556}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5556, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5556, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5556, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3ebdb6ef-a3bf-40fa-9912-e3aa32b8cc6a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+</pre></div></td>
+<td>68</td>
+<td>Create_Store.LessThanThree_SubDomainTest@32910148</td></tr>
+<tr>
+<td title='Create_Store.Alphabets_ConfirmPINTest.Alphabets()'><b>Alphabets</b><br>Test class: Create_Store.Alphabets_ConfirmPINTest</td>
+<td><div><pre>java.lang.AssertionError: ❌ Field accepted alphabets! Value found: Enter 4 digit confirm PIN
+	at Create_Store.Alphabets_ConfirmPINTest.Alphabets(Alphabets_ConfirmPINTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace122751012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace122751012'><pre>java.lang.AssertionError: ❌ Field accepted alphabets! Value found: Enter 4 digit confirm PIN
+	at org.testng.Assert.fail(Assert.java:111)
+	at Create_Store.Alphabets_ConfirmPINTest.Alphabets(Alphabets_ConfirmPINTest.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>40</td>
+<td>Create_Store.Alphabets_ConfirmPINTest@568ff82</td></tr>
+<tr>
+<td title='Create_Store.Invalid_SubDomainTest.invalid()'><b>invalid</b><br>Test class: Create_Store.Invalid_SubDomainTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast[contains(@text,&apos;reserved word&apos;) or contains(@text,&apos;Invalid subdomain format&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Create_Store.Invalid_SubDomainTest.invalid(Invalid_SubDomainTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [d544cba9-42d6-4500-bc43-ed2a47c1c69b, findElement {using=xpath, value=//android.widget.Toast[contains(@text,&apos;reserved word&apos;) or contains(@text,&apos;Invalid subdomain format&apos;)]}]
+Capabilities {appium:appActivity: com.nextshopz.MainActivity, appium:appPackage: com.nextshopz, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.nextshopz.MainActivity, appPackage: com.nextshopz, automationName: UiAutomator2, deviceName: emulator-5556, platformName: ANDROID, platformVersion: 16, udid: emulator-5556}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5556, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5556, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5556, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d544cba9-42d6-4500-bc43-ed2a47c1c69b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace988705496", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace988705496'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast[contains(@text,&apos;reserved word&apos;) or contains(@text,&apos;Invalid subdomain format&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Create_Store.Invalid_SubDomainTest.invalid(Invalid_SubDomainTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [d544cba9-42d6-4500-bc43-ed2a47c1c69b, findElement {using=xpath, value=//android.widget.Toast[contains(@text,&apos;reserved word&apos;) or contains(@text,&apos;Invalid subdomain format&apos;)]}]
+Capabilities {appium:appActivity: com.nextshopz.MainActivity, appium:appPackage: com.nextshopz, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.nextshopz.MainActivity, appPackage: com.nextshopz, automationName: UiAutomator2, deviceName: emulator-5556, platformName: ANDROID, platformVersion: 16, udid: emulator-5556}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5556, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5556, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5556, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d544cba9-42d6-4500-bc43-ed2a47c1c69b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+</pre></div></td>
+<td>71</td>
+<td>Create_Store.Invalid_SubDomainTest@45ca843</td></tr>
+<tr>
+<td title='Create_Store.MoreThanLimit_SubDomainTest.lessThanThree()'><b>lessThanThree</b><br>Test class: Create_Store.MoreThanLimit_SubDomainTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast[contains(@text,&apos;Domain name must be between 5 and 30 characters.&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Create_Store.MoreThanLimit_SubDomainTest.lessThanThree(MoreThanLimit_SubDomainTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [b38cb428-9944-40ed-abf9-afd1201dc3a5, findElement {using=xpath, value=//android.widget.Toast[contains(@text,&apos;Domain name must be between 5 and 30 characters.&apos;)]}]
+Capabilities {appium:appActivity: com.nextshopz.MainActivity, appium:appPackage: com.nextshopz, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.nextshopz.MainActivity, appPackage: com.nextshopz, automationName: UiAutomator2, deviceName: emulator-5556, platformName: ANDROID, platformVersion: 16, udid: emulator-5556}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5556, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5556, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5556, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b38cb428-9944-40ed-abf9-afd1201dc3a5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace335370922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace335370922'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast[contains(@text,&apos;Domain name must be between 5 and 30 characters.&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Create_Store.MoreThanLimit_SubDomainTest.lessThanThree(MoreThanLimit_SubDomainTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [b38cb428-9944-40ed-abf9-afd1201dc3a5, findElement {using=xpath, value=//android.widget.Toast[contains(@text,&apos;Domain name must be between 5 and 30 characters.&apos;)]}]
+Capabilities {appium:appActivity: com.nextshopz.MainActivity, appium:appPackage: com.nextshopz, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.nextshopz.MainActivity, appPackage: com.nextshopz, automationName: UiAutomator2, deviceName: emulator-5556, platformName: ANDROID, platformVersion: 16, udid: emulator-5556}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5556, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5556, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5556, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b38cb428-9944-40ed-abf9-afd1201dc3a5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+</pre></div></td>
+<td>66</td>
+<td>Create_Store.MoreThanLimit_SubDomainTest@6bf0219d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: dashboard</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.Valid_ReferalCodeTest.delete()'><b>delete</b><br>Test class: Create_Store.Valid_ReferalCodeTest</td>
+<td></td>
+<td>34</td>
+<td>Create_Store.Valid_ReferalCodeTest@484970b0</td></tr>
+<tr>
+<td title='Create_Store.SpecialCharacters_StoreNameTest.specialCharacters()'><b>specialCharacters</b><br>Test class: Create_Store.SpecialCharacters_StoreNameTest</td>
+<td></td>
+<td>43</td>
+<td>Create_Store.SpecialCharacters_StoreNameTest@157853da</td></tr>
+<tr>
+<td title='Create_Store.SpecialCharacters_ConfirmPINTest.specialCharacters()'><b>specialCharacters</b><br>Test class: Create_Store.SpecialCharacters_ConfirmPINTest</td>
+<td></td>
+<td>37</td>
+<td>Create_Store.SpecialCharacters_ConfirmPINTest@5f16132a</td></tr>
+<tr>
+<td title='Create_Store.MissMatch_PINTest.missMatch()'><b>missMatch</b><br>Test class: Create_Store.MissMatch_PINTest</td>
+<td></td>
+<td>46</td>
+<td>Create_Store.MissMatch_PINTest@28975c28</td></tr>
+<tr>
+<td title='Create_Store.Alphanumeric_BusinessTypeTest.alphaNumeric()'><b>alphaNumeric</b><br>Test class: Create_Store.Alphanumeric_BusinessTypeTest</td>
+<td></td>
+<td>45</td>
+<td>Create_Store.Alphanumeric_BusinessTypeTest@5609159b</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: nextshopz</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.SetPinTest.setPin()'><b>setPin</b><br>Test class: Create_Store.SetPinTest</td>
+<td></td>
+<td>41</td>
+<td>Create_Store.SetPinTest@f2ff811</td></tr>
+<tr>
+<td title='Create_Store.MoreThanFifty_OwnerNameTest.moreThanFifty()'><b>moreThanFifty</b><br>Test class: Create_Store.MoreThanFifty_OwnerNameTest</td>
+<td></td>
+<td>39</td>
+<td>Create_Store.MoreThanFifty_OwnerNameTest@65b3f4a4</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: smtpsmtp</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.Empty_SubDomainTest.empty()'><b>empty</b><br>Test class: Create_Store.Empty_SubDomainTest</td>
+<td></td>
+<td>49</td>
+<td>Create_Store.Empty_SubDomainTest@76ed1b7c</td></tr>
+<tr>
+<td title='Create_Store.Numerics_BusinessTypeTest.numerics()'><b>numerics</b><br>Test class: Create_Store.Numerics_BusinessTypeTest</td>
+<td></td>
+<td>47</td>
+<td>Create_Store.Numerics_BusinessTypeTest@394a2528</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: imapimap</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.LessThanTen_NumberTest.lessThanTen()'><b>lessThanTen</b><br>Test class: Create_Store.LessThanTen_NumberTest</td>
+<td></td>
+<td>16</td>
+<td>Create_Store.LessThanTen_NumberTest@740773a3</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: poppop</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.SpaceStartEnd_StoreNameTest.spaceStartEnd()'><b>spaceStartEnd</b><br>Test class: Create_Store.SpaceStartEnd_StoreNameTest</td>
+<td></td>
+<td>45</td>
+<td>Create_Store.SpaceStartEnd_StoreNameTest@757acd7b</td></tr>
+<tr>
+<td title='Create_Store.Empty_NumberTest.empty()'><b>empty</b><br>Test class: Create_Store.Empty_NumberTest</td>
+<td></td>
+<td>17</td>
+<td>Create_Store.Empty_NumberTest@4470f8a6</td></tr>
+<tr>
+<td title='Create_Store.Valid_StoreNameTest.valid()'><b>valid</b><br>Test class: Create_Store.Valid_StoreNameTest</td>
+<td></td>
+<td>40</td>
+<td>Create_Store.Valid_StoreNameTest@71c3b41</td></tr>
+<tr>
+<td title='Create_Store.Numeric_ReferalCodeTest.numeric()'><b>numeric</b><br>Test class: Create_Store.Numeric_ReferalCodeTest</td>
+<td></td>
+<td>55</td>
+<td>Create_Store.Numeric_ReferalCodeTest@fa36558</td></tr>
+<tr>
+<td title='Create_Store.Empty_StoreNameTest.empty()'><b>empty</b><br>Test class: Create_Store.Empty_StoreNameTest</td>
+<td></td>
+<td>44</td>
+<td>Create_Store.Empty_StoreNameTest@ba54932</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: dnsdns</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.Empty_MandatoryFieldsTest.empty()'><b>empty</b><br>Test class: Create_Store.Empty_MandatoryFieldsTest</td>
+<td></td>
+<td>40</td>
+<td>Create_Store.Empty_MandatoryFieldsTest@672872e1</td></tr>
+<tr>
+<td title='Create_Store.MaxLimit_BusinessTypeTest.maxLimit()'><b>maxLimit</b><br>Test class: Create_Store.MaxLimit_BusinessTypeTest</td>
+<td></td>
+<td>49</td>
+<td>Create_Store.MaxLimit_BusinessTypeTest@3f56875e</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: nsss--</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.SpecialCharacters_BusinessTypeTest.specialCharacters()'><b>specialCharacters</b><br>Test class: Create_Store.SpecialCharacters_BusinessTypeTest</td>
+<td></td>
+<td>48</td>
+<td>Create_Store.SpecialCharacters_BusinessTypeTest@57250572</td></tr>
+<tr>
+<td title='Create_Store.Alphabets_NewPINTest.Alphabets()'><b>Alphabets</b><br>Test class: Create_Store.Alphabets_NewPINTest</td>
+<td></td>
+<td>29</td>
+<td>Create_Store.Alphabets_NewPINTest@5ab9e72c</td></tr>
+<tr>
+<td title='Create_Store.Customize_SubDomainTest.customize()'><b>customize</b><br>Test class: Create_Store.Customize_SubDomainTest</td>
+<td></td>
+<td>51</td>
+<td>Create_Store.Customize_SubDomainTest@36b4fe2a</td></tr>
+<tr>
+<td title='Create_Store.LessThanThree_OwnerNameTest.lessThanThree()'><b>lessThanThree</b><br>Test class: Create_Store.LessThanThree_OwnerNameTest</td>
+<td></td>
+<td>37</td>
+<td>Create_Store.LessThanThree_OwnerNameTest@68567e20</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: appapp</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.Valid_NumberTest.valid()'><b>valid</b><br>Test class: Create_Store.Valid_NumberTest</td>
+<td></td>
+<td>19</td>
+<td>Create_Store.Valid_NumberTest@6a03bcb1</td></tr>
+<tr>
+<td title='Create_Store.ServiceProduct_CreateStoreTest.delete()'><b>delete</b><br>Test class: Create_Store.ServiceProduct_CreateStoreTest</td>
+<td></td>
+<td>37</td>
+<td>Create_Store.ServiceProduct_CreateStoreTest@3943a2be</td></tr>
+<tr>
+<td title='Create_Store.Alphabets_ReferalCodeTest.alphabets()'><b>alphabets</b><br>Test class: Create_Store.Alphabets_ReferalCodeTest</td>
+<td></td>
+<td>55</td>
+<td>Create_Store.Alphabets_ReferalCodeTest@37f1104d</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: apple</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.Valid_NewPINTest.valid()'><b>valid</b><br>Test class: Create_Store.Valid_NewPINTest</td>
+<td></td>
+<td>34</td>
+<td>Create_Store.Valid_NewPINTest@236e3f4e</td></tr>
+<tr>
+<td title='Create_Store.ServiceProduct_CreateStoreTest.serviceProduct()'><b>serviceProduct</b><br>Test class: Create_Store.ServiceProduct_CreateStoreTest</td>
+<td></td>
+<td>64</td>
+<td>Create_Store.ServiceProduct_CreateStoreTest@3943a2be</td></tr>
+<tr>
+<td title='Create_Store.Valid_OwnerNameTest.valid()'><b>valid</b><br>Test class: Create_Store.Valid_OwnerNameTest</td>
+<td></td>
+<td>34</td>
+<td>Create_Store.Valid_OwnerNameTest@7748410a</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: static</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.SpaceStartEnd_BusinessTypeTest.maxLimit()'><b>maxLimit</b><br>Test class: Create_Store.SpaceStartEnd_BusinessTypeTest</td>
+<td></td>
+<td>47</td>
+<td>Create_Store.SpaceStartEnd_BusinessTypeTest@574b560f</td></tr>
+<tr>
+<td title='Create_Store.Valid_ConfirmPINTest.valid()'><b>valid</b><br>Test class: Create_Store.Valid_ConfirmPINTest</td>
+<td></td>
+<td>33</td>
+<td>Create_Store.Valid_ConfirmPINTest@fd07cbb</td></tr>
+<tr>
+<td title='Create_Store.MoreThanTen_NumberTest.moreThanTen()'><b>moreThanTen</b><br>Test class: Create_Store.MoreThanTen_NumberTest</td>
+<td></td>
+<td>20</td>
+<td>Create_Store.MoreThanTen_NumberTest@2118cddf</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: google</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: admin</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: ftpftp</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.Valid_ReferalCodeTest.valid()'><b>valid</b><br>Test class: Create_Store.Valid_ReferalCodeTest</td>
+<td></td>
+<td>67</td>
+<td>Create_Store.Valid_ReferalCodeTest@484970b0</td></tr>
+<tr>
+<td title='Create_Store.AlphaNumerics_ComfirmPINTest.alphaNumeric()'><b>alphaNumeric</b><br>Test class: Create_Store.AlphaNumerics_ComfirmPINTest</td>
+<td></td>
+<td>46</td>
+<td>Create_Store.AlphaNumerics_ComfirmPINTest@6a2b953e</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: mailmail</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: wwwwww</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.AlhaNumerics_StoreNameTest.alphaNumerics()'><b>alphaNumerics</b><br>Test class: Create_Store.AlhaNumerics_StoreNameTest</td>
+<td></td>
+<td>38</td>
+<td>Create_Store.AlhaNumerics_StoreNameTest@186f8716</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: apiapi</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.Empty_TermsAndConditionsTest.product()'><b>product</b><br>Test class: Create_Store.Empty_TermsAndConditionsTest</td>
+<td></td>
+<td>52</td>
+<td>Create_Store.Empty_TermsAndConditionsTest@343570b7</td></tr>
+<tr>
+<td title='Create_Store.Numeric_OwnerNameTest.numeric()'><b>numeric</b><br>Test class: Create_Store.Numeric_OwnerNameTest</td>
+<td></td>
+<td>45</td>
+<td>Create_Store.Numeric_OwnerNameTest@60015ef5</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: ns2ns2</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.Empty_PINTest.empty()'><b>empty</b><br>Test class: Create_Store.Empty_PINTest</td>
+<td></td>
+<td>26</td>
+<td>Create_Store.Empty_PINTest@7c1e2a9e</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: cdncdn</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.SelectExisted_SubDomainTest.selectExisted()'><b>selectExisted</b><br>Test class: Create_Store.SelectExisted_SubDomainTest</td>
+<td></td>
+<td>48</td>
+<td>Create_Store.SelectExisted_SubDomainTest@11c9af63</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: support</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.SpecialCharacters_NumberTest.specialCharacters()'><b>specialCharacters</b><br>Test class: Create_Store.SpecialCharacters_NumberTest</td>
+<td></td>
+<td>17</td>
+<td>Create_Store.SpecialCharacters_NumberTest@2b4bac49</td></tr>
+<tr>
+<td title='Create_Store.ProductSale_CreateStoreTest.product()'><b>product</b><br>Test class: Create_Store.ProductSale_CreateStoreTest</td>
+<td></td>
+<td>64</td>
+<td>Create_Store.ProductSale_CreateStoreTest@50caa560</td></tr>
+<tr>
+<td title='Create_Store.Characters_NumberTest.characters()'><b>characters</b><br>Test class: Create_Store.Characters_NumberTest</td>
+<td></td>
+<td>16</td>
+<td>Create_Store.Characters_NumberTest@2a266d09</td></tr>
+<tr>
+<td title='Create_Store.SpecialCharacters_NewPINTest.specialCharacters()'><b>specialCharacters</b><br>Test class: Create_Store.SpecialCharacters_NewPINTest</td>
+<td></td>
+<td>34</td>
+<td>Create_Store.SpecialCharacters_NewPINTest@55740540</td></tr>
+<tr>
+<td title='Create_Store.AlphaNumerics_OwnerNameTest.alphaNumeric()'><b>alphaNumeric</b><br>Test class: Create_Store.AlphaNumerics_OwnerNameTest</td>
+<td></td>
+<td>40</td>
+<td>Create_Store.AlphaNumerics_OwnerNameTest@dd0c991</td></tr>
+<tr>
+<td title='Create_Store.ProductSale_CreateStoreTest.delete()'><b>delete</b><br>Test class: Create_Store.ProductSale_CreateStoreTest</td>
+<td></td>
+<td>33</td>
+<td>Create_Store.ProductSale_CreateStoreTest@50caa560</td></tr>
+<tr>
+<td title='Create_Store.AlphaNumarics_NewPINTest.alphaNumarics()'><b>alphaNumarics</b><br>Test class: Create_Store.AlphaNumarics_NewPINTest</td>
+<td></td>
+<td>37</td>
+<td>Create_Store.AlphaNumarics_NewPINTest@3098cf3b</td></tr>
+<tr>
+<td title='Create_Store.Duplicate_SubDomainTest.duplicate()'><b>duplicate</b><br>Test class: Create_Store.Duplicate_SubDomainTest</td>
+<td></td>
+<td>55</td>
+<td>Create_Store.Duplicate_SubDomainTest@175b9425</td></tr>
+<tr>
+<td title='Create_Store.Empty_OwnerNameTest.empty()'><b>empty</b><br>Test class: Create_Store.Empty_OwnerNameTest</td>
+<td></td>
+<td>40</td>
+<td>Create_Store.Empty_OwnerNameTest@11fc564b</td></tr>
+<tr>
+<td title='Create_Store.AlphaNumerics_NumberTest.alphanumeric()'><b>alphanumeric</b><br>Test class: Create_Store.AlphaNumerics_NumberTest</td>
+<td></td>
+<td>16</td>
+<td>Create_Store.AlphaNumerics_NumberTest@1018bde2</td></tr>
+<tr>
+<td title='Create_Store.Numarics_StoreNameTest.numarics()'><b>numarics</b><br>Test class: Create_Store.Numarics_StoreNameTest</td>
+<td></td>
+<td>42</td>
+<td>Create_Store.Numarics_StoreNameTest@1d8bd0de</td></tr>
+<tr>
+<td title='Create_Store.Valid_BusinessTypeTest.valid()'><b>valid</b><br>Test class: Create_Store.Valid_BusinessTypeTest</td>
+<td></td>
+<td>43</td>
+<td>Create_Store.Valid_BusinessTypeTest@7c83dc97</td></tr>
+<tr>
+<td title='Create_Store.SpecialCharacters_OwnerNameTest.specialCharacters()'><b>specialCharacters</b><br>Test class: Create_Store.SpecialCharacters_OwnerNameTest</td>
+<td></td>
+<td>39</td>
+<td>Create_Store.SpecialCharacters_OwnerNameTest@6236eb5f</td></tr>
+<tr>
+<td title='Create_Store.checkxl.test()'><b>test</b><br>Test class: Create_Store.checkxl<br>Parameters: ns1ns1</td>
+<td></td>
+<td>0</td>
+<td>Create_Store.checkxl@17a7f733</td></tr>
+<tr>
+<td title='Create_Store.StartWithZero_NumberTest.startWithZero()'><b>startWithZero</b><br>Test class: Create_Store.StartWithZero_NumberTest</td>
+<td></td>
+<td>17</td>
+<td>Create_Store.StartWithZero_NumberTest@610f7aa</td></tr>
+<tr>
+<td title='Create_Store.Empty_BusinessTypeTest.alphaNumeric()'><b>alphaNumeric</b><br>Test class: Create_Store.Empty_BusinessTypeTest</td>
+<td></td>
+<td>50</td>
+<td>Create_Store.Empty_BusinessTypeTest@21b2e768</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Create_Store.Service_CreateStoreTest.delete()'><b>delete</b><br>Test class: Create_Store.Service_CreateStoreTest</td>
+<td><div><pre>java.lang.Throwable: Method Create_Store.Service_CreateStoreTest.delete() on instance Create_Store.Service_CreateStoreTest@3cc1435c depends on not successfully finished methods 
+[Create_Store.Service_CreateStoreTest.service() on instance Create_Store.Service_CreateStoreTest@3cc1435c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1846621409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1846621409'><pre>java.lang.Throwable: Method Create_Store.Service_CreateStoreTest.delete() on instance Create_Store.Service_CreateStoreTest@3cc1435c depends on not successfully finished methods 
+[Create_Store.Service_CreateStoreTest.service() on instance Create_Store.Service_CreateStoreTest@3cc1435c]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Create_Store.Service_CreateStoreTest@3cc1435c</td></tr>
+</table><p>
+</body>
+</html>

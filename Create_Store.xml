@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Create_Store">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Create_Store.AlphaNumerics_ComfirmPINTest"/>
+      <class name="Create_Store.Duplicate_SubDomainTest"/>
+      <class name="Create_Store.AlphaNumarics_NewPINTest"/>
+      <class name="Create_Store.StartWithZero_NumberTest"/>
+      <class name="Create_Store.Valid_NumberTest"/>
+      <class name="Create_Store.Empty_BusinessTypeTest"/>
+      <class name="Create_Store.SpecialCharacters_BusinessTypeTest"/>
+      <class name="Create_Store.Alphanumeric_BusinessTypeTest"/>
+      <class name="Create_Store.MoreThanTen_NumberTest"/>
+      <class name="Create_Store.checkxl"/>
+      <class name="Create_Store.LessThanThree_OwnerNameTest"/>
+      <class name="Create_Store.Empty_SubDomainTest"/>
+      <class name="Create_Store.Empty_OwnerNameTest"/>
+      <class name="Create_Store.Numerics_BusinessTypeTest"/>
+      <class name="Create_Store.SpecialCharacters_OwnerNameTest"/>
+      <class name="Create_Store.Empty_PINTest"/>
+      <class name="Create_Store.Numeric_ReferalCodeTest"/>
+      <class name="Create_Store.Empty_MandatoryFieldsTest"/>
+      <class name="Create_Store.LessThanThree_SubDomainTest"/>
+      <class name="Create_Store.MaxLimit_BusinessTypeTest"/>
+      <class name="Create_Store.SpecialCharacters_NumberTest"/>
+      <class name="Create_Store.Valid_ConfirmPINTest"/>
+      <class name="Create_Store.Valid_ReferalCodeTest"/>
+      <class name="Create_Store.Empty_NumberTest"/>
+      <class name="Create_Store.Valid_BusinessTypeTest"/>
+      <class name="Create_Store.Valid_OwnerNameTest"/>
+      <class name="Create_Store.LessThanTen_NumberTest"/>
+      <class name="Create_Store.Alphabets_ReferalCodeTest"/>
+      <class name="Create_Store.SpecialCharacters_NewPINTest"/>
+      <class name="Create_Store.Numeric_OwnerNameTest"/>
+      <class name="Create_Store.AlphaNumerics_NumberTest"/>
+      <class name="Create_Store.MoreThanFifty_OwnerNameTest"/>
+      <class name="Create_Store.SetPinTest"/>
+      <class name="Create_Store.Alphabets_ConfirmPINTest"/>
+      <class name="Create_Store.ProductSale_CreateStoreTest"/>
+      <class name="Create_Store.Characters_NumberTest"/>
+      <class name="Create_Store.Alphabets_NewPINTest"/>
+      <class name="Create_Store.AlhaNumerics_StoreNameTest"/>
+      <class name="Create_Store.Numarics_StoreNameTest"/>
+      <class name="Create_Store.Invalid_SubDomainTest"/>
+      <class name="Create_Store.SelectExisted_SubDomainTest"/>
+      <class name="Create_Store.SpaceStartEnd_StoreNameTest"/>
+      <class name="Create_Store.Customize_SubDomainTest"/>
+      <class name="Create_Store.SpaceStartEnd_BusinessTypeTest"/>
+      <class name="Create_Store.Empty_StoreNameTest"/>
+      <class name="Create_Store.MissMatch_PINTest"/>
+      <class name="Create_Store.ServiceProduct_CreateStoreTest"/>
+      <class name="Create_Store.Empty_TermsAndConditionsTest"/>
+      <class name="Create_Store.SpecialCharacters_StoreNameTest"/>
+      <class name="Create_Store.Valid_StoreNameTest"/>
+      <class name="Create_Store.Valid_NewPINTest"/>
+      <class name="Create_Store.Service_CreateStoreTest"/>
+      <class name="Create_Store.MoreThanLimit_SubDomainTest"/>
+      <class name="Create_Store.AlphaNumerics_OwnerNameTest"/>
+      <class name="Create_Store.SpecialCharacters_ConfirmPINTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Create_Store -->
